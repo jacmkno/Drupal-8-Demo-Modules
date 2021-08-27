@@ -3,7 +3,7 @@ The modules work together to demonstrate differente features.
 
 ## What do the modules do?
 
-The modules create a set of URLs in your drupal installation where you can test form posting, ajax callas, rest endpoints, form validation, schema creation, and other features.
+The modules create a set of URLs in your drupal installation where you can test form posting, ajax calls, rest endpoints, form validation, schema creation, and component theming.
 
 ### Demo site:
 - Form: https://drupal8demo.activisual.net/example-module/form
