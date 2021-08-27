@@ -1,0 +1,40 @@
+<?php
+function demo_schema() {
+  $schema['example_users'] = array(
+    'fields' => array(
+      'id'=>array(
+        'type'=>'serial',
+        'not null' => TRUE,
+      ),
+      'name'=>array(
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ),
+      'idNum'=>array(
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ),
+      'dob'=>array(
+        'type' => 'varchar',
+        'mysql_type' => 'date',
+        'length' => 20,
+        'not null' => FALSE,
+      ),
+      'role'=>array(
+        'type' => 'varchar',
+        'length' => 20,
+        'not null' => TRUE,
+      ),
+      'status'=>array(
+        'type' => 'int',
+        'mysql_type' => 'tinyint',
+        'not null' => TRUE,
+      ),
+      
+    ),
+    'primary key' => array('id'),
+  );
+  return $schema;
+}

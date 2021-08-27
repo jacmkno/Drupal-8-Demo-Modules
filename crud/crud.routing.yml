@@ -1,0 +1,8 @@
+crud.api:
+  path: '/example-crud/data/{id}'
+  defaults:
+    _controller: '\Drupal\crud\CrudController::rest'
+    id: null
+  methods:  [GET, POST, PATCH, DELETE, PUT]
+  requirements:
+    _access: 'TRUE'

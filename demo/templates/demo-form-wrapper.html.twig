@@ -1,0 +1,63 @@
+<style>
+.form-cols {
+    --gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(200px, calc(50% - var(--gap)/2)), 1fr));
+    
+    grid-gap: var(--gap);
+    padding: 0 10px;
+    border-radius: 10px;
+    border-color: #f9f9f9;
+    background-color: #f6f6f2;    
+}
+
+.form-cols .form-actions {
+    grid-column: 1 / -1;
+    text-align: right;
+}
+
+.form-cols .form-text, .form-cols .form-select {
+    height: 36px;
+}
+
+.form-actions.extra label{
+  display:inline;
+}
+.form-actions{
+  margin:0;
+  padding:0;
+}
+</style>
+
+<div class="form-cols">
+{{form}}
+<div class="form-actions extra">
+  <input type="checkbox" id="ajax"><label>Usar Ajax</label>
+</div>
+</div>
+
+<script>
+(()=>{
+  var form = document.querySelector('.demo-form');
+  var ajax = document.querySelector('#ajax');
+  form.addEventListener('submit',async e=>{
+    if(!ajax.checked) return;
+    var data = Object.fromEntries((new FormData(form)).entries());
+    for(var k in data) if(k.startsWith('form_')){
+      delete data[k];
+    }
+    fetch('/example-crud/data', {method:'POST', body:JSON.stringify(data), headers: { 'Content-Type': 'application/json' }})
+      .then(r=>r.json())
+      .then(data=>{
+        alert('Datos registrados con id: ' + data.id);
+        form.querySelectorAll('input:not([type="submit"]), select').forEach(e=>{
+          e.value = '';
+        });
+      })
+    e.preventDefault();
+    return false;
+  });
+
+})();
+
+</script>

@@ -1,0 +1,15 @@
+demo.content:
+  path: '/example-module/data'
+  defaults:
+    _controller: '\Drupal\demo\DemoController::content'
+    _title: 'Demo Module X'
+  requirements:
+    _permission: 'access content'
+
+demo.form:
+  path: '/example-module/form'
+  defaults:
+    _form: '\Drupal\demo\DemoForm'
+    _title: 'Example Form'
+  requirements:
+    _permission: 'access content'

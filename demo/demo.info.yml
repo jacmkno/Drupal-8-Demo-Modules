@@ -1,0 +1,6 @@
+name: Demo Module
+description: Creates a page showing a demo form.
+package: Custom
+type: module
+version: 1.0
+core: 8.x

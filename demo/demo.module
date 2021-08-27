@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function demo_theme($existing, $type, $theme, $path) {
+  return [
+    'demo_form_wrapper' => [
+      'render element' => 'form',
+    ]
+  ];
+}

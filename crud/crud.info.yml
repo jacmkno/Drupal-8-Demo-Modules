@@ -1,0 +1,9 @@
+name: Crud Demo Module
+description: An API to manage the table created in the demo module.
+package: Custom
+type: module
+version: 1.0
+core: 8.x
+
+dependencies:
+  - drupal:rest
