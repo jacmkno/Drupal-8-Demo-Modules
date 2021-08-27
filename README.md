@@ -22,10 +22,10 @@ You can copy and paste this in your browser console to add a new record, just up
 ```
 fetch('/example-crud/data',{'method':'POST',
   body:JSON.stringify({
-    "name":"yyyyyyy",
-    "idNum":"123123123",
-    "dob":null,
-    "role":"admin"
+    "name":"yyyyyyy", // Only numbers and alpha
+    "idNum":"123123123", // Identification Number
+    "dob":null, //Date of Birth
+    "role":"admin" // any of: admin, dev, webmaster
   }), 
   headers: { 'Content-Type': 'application/json' }
 });
