@@ -32,5 +32,5 @@ fetch('/example-crud/data',{'method':'POST',
 ```
 
 ## Download Links
-- **Crud Module:** https://github.com/jacmkno/Drupa-8-Demo-Modules/raw/main/crud.tgz
-- **Form Module:** https://github.com/jacmkno/Drupa-8-Demo-Modules/raw/main/demo.tgz
+- **Crud Module:** https://github.com/jacmkno/Drupa-8-Demo-Modules/raw/main/crud.tar.gz
+- **Form Module:** https://github.com/jacmkno/Drupa-8-Demo-Modules/raw/main/demo.tar.gz
