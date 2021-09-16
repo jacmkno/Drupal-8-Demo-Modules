@@ -36,5 +36,5 @@ fetch('/example-crud/data',{'method':'POST',
 - **Form Module:** https://github.com/jacmkno/Drupa-8-Demo-Modules/raw/main/demo.tar.gz
 
 ## Install instructions:
-1. Upload the files to your drupal installation through the module installation interface or decompress them in your /modules folder/
+1. Upload the files to your drupal installation through the module installation interface or decompress them in your /modules folder.
 2. Activate the modules in your extensions section.
