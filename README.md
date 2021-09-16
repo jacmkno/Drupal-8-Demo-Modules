@@ -1,5 +1,5 @@
 # Demo Modules For Drupal 8
-The modules work together to demonstrate differente features. 
+The modules work together to demonstrate a few Drupal 8 features. 
 
 ## What do the modules do?
 
